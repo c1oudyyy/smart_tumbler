@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="choose_drink">Dialog</string>
+
+    <string-array name="drink">
+
+        <item>물</item>
+        <item>커피</item>
+        <item>콜라</item>
+        <item>에너지 음료</item>
+        <item>오렌지 주스</item>
+        <item>이온음료</item>
+    </string-array>
+
+</resources>

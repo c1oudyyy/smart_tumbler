@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    tools:context=".LogFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="로그"
+                    android:textSize="18dp"
+                    android:textColor="@color/black"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="13dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="일주일 동안 목표 달성치"
+                        android:textColor="@color/black"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="80%"
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="8dp"/>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="잘하고 있어요!"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="3dp"/>
+
+            </LinearLayout>
+
+            //수분섭취 그래프
+            <com.github.mikephil.charting.charts.BarChart
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:id="@+id/barChart" >
+            </com.github.mikephil.charting.charts.BarChart>
+
+            //달력
+            <devs.mulham.horizontalcalendar.HorizontalCalendarView
+                android:id="@+id/calendarView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/blue_500"
+                app:textColorSelected="@color/white"/>
+
+
+            //성분정리
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                //물
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+                    <com.dinuscxj.progressbar.CircleProgressBar
+                        android:id="@+id/water_circlebar"
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        app:progress_end_color="@color/blue_500"
+                        app:progress_start_color="@color/blue_700"
+                        app:progress_stroke_cap="round"
+                        app:progress_stroke_width="10dp"
+                        app:progress_text_size="15sp"
+                        app:progress_text_color="@color/blue_700"
+                        app:style="solid_line"
+                        android:layout_gravity="center"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="물(ml)"
+                        android:textColor="@color/blue_700"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"/>
+                </LinearLayout> <!--물-->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <!--칼로리-->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="5dp">
+                            <com.dinuscxj.progressbar.CircleProgressBar
+                                android:id="@+id/calorie_circlebar"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                app:progress_end_color="@color/blue_500"
+                                app:progress_start_color="@color/blue_700"
+                                app:progress_stroke_cap="round"
+                                app:progress_stroke_width="10dp "
+                                app:progress_text_size="15sp"
+                                app:progress_text_color="@color/blue_700"
+                                app:style="solid_line"
+                                android:layout_gravity="center"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="칼로리(kcal)"
+                                android:textSize="10sp"
+                                android:textColor="@color/blue_700"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"/>
+                        </LinearLayout>
+                        <!--카페인-->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="5dp">
+                            <com.dinuscxj.progressbar.CircleProgressBar
+                                android:id="@+id/caffeine_circlebar"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                app:progress_end_color="@color/blue_500"
+                                app:progress_start_color="@color/blue_700"
+                                app:progress_stroke_cap="round"
+                                app:progress_stroke_width="10dp "
+                                app:progress_text_size="15sp"
+                                app:progress_text_color="@color/blue_700"
+                                app:style="solid_line"
+                                android:layout_gravity="center"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="카페인(mg)"
+                                android:textSize="10sp"
+                                android:textColor="@color/blue_700"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"/>
+                        </LinearLayout>
+                        <!--단백질-->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="5dp">
+                            <com.dinuscxj.progressbar.CircleProgressBar
+                                android:id="@+id/protein_circlebar"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                app:progress_end_color="@color/blue_500"
+                                app:progress_start_color="@color/blue_700"
+                                app:progress_stroke_cap="round"
+                                app:progress_stroke_width="10dp "
+                                app:progress_text_size="15sp"
+                                app:progress_text_color="@color/blue_700"
+                                app:style="solid_line"
+                                android:layout_gravity="center"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="단백질(g)"
+                                android:textSize="10sp"
+                                android:textColor="@color/blue_700"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="5dp">
+                            <!--당류-->
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginLeft="5dp">
+                                <com.dinuscxj.progressbar.CircleProgressBar
+                                    android:id="@+id/sugar_circlebar"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    app:progress_end_color="@color/blue_500"
+                                    app:progress_start_color="@color/blue_700"
+                                    app:progress_stroke_cap="round"
+                                    app:progress_stroke_width="10dp "
+                                    app:progress_text_size="15sp"
+                                    app:progress_text_color="@color/blue_700"
+                                    app:style="solid_line"
+                                    android:layout_gravity="center"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="당류(g)"
+                                    android:textSize="10sp"
+                                    android:textColor="@color/blue_700"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"/>
+                            </LinearLayout>
+                        <!--나트륨-->
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginLeft="5dp">
+                                <com.dinuscxj.progressbar.CircleProgressBar
+                                    android:id="@+id/natrium_circlebar"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    app:progress_end_color="@color/blue_500"
+                                    app:progress_start_color="@color/blue_700"
+                                    app:progress_stroke_cap="round"
+                                    app:progress_stroke_width="10dp "
+                                    app:progress_text_size="15sp"
+                                    app:progress_text_color="@color/blue_700"
+                                    app:style="solid_line"
+                                    android:layout_gravity="center"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="나트륨(mg)"
+                                    android:textSize="10sp"
+                                    android:textColor="@color/blue_700"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"/>
+                            </LinearLayout>
+                        <!--포화지방-->
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginLeft="5dp">
+                                <com.dinuscxj.progressbar.CircleProgressBar
+                                    android:id="@+id/fat_circlebar"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    app:progress_end_color="@color/blue_500"
+                                    app:progress_start_color="@color/blue_700"
+                                    app:progress_stroke_cap="round"
+                                    app:progress_stroke_width="10dp "
+                                    app:progress_text_size="15sp"
+                                    app:progress_text_color="@color/blue_700"
+                                    app:style="solid_line"
+                                    android:layout_gravity="center"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="포화지방(g)"
+                                    android:textSize="10sp"
+                                    android:textColor="@color/blue_700"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                </LinearLayout>
+            </LinearLayout> <!--성분 정리-->
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

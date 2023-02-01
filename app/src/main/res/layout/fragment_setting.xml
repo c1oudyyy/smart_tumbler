@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- 가운에로 wrap-->
+        <LinearLayout
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="35dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="설정"
+                android:textColor="#000"
+                android:textSize="18dp" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="#eeeeee"
+                android:id="@+id/setting_preferenceFragment">
+            </FrameLayout>
+            <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="30dp"
+                            android:background="#eeeeee"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="340dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:drawableRight="@drawable/ic_baseline_arrow_forward_ios_24"
+                                android:paddingVertical="10dp"
+                                android:text="닉네임"
+                                android:textColor="#000"
+                                android:id="@+id/user_name"/>
+
+                            <TextView
+                                android:layout_width="340dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:drawableRight="@drawable/ic_baseline_arrow_forward_ios_24"
+                                android:paddingVertical="10dp"
+                                android:text="몸무게 설정"
+                                android:textColor="#000"
+                                android:id="@+id/weight"/>
+
+                            <TextView
+                                android:layout_width="340dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:drawableRight="@drawable/ic_baseline_arrow_forward_ios_24"
+                                android:paddingVertical="10dp"
+                                android:text="키 설정"
+                                android:textColor="#000"
+                                android:id="@+id/tall"/>
+
+                            <TextView
+                                android:layout_width="340dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:drawableRight="@drawable/ic_baseline_arrow_forward_ios_24"
+                                android:paddingVertical="10dp"
+                                android:text="하루목표 수분량 설정"
+                                android:textColor="#000"
+                                android:id="@+id/water_day"/>
+
+                            <TextView
+                                android:layout_width="340dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:drawableRight="@drawable/ic_baseline_arrow_forward_ios_24"
+                                android:paddingVertical="10dp"
+                                android:text="필요성분 설정"
+                                android:textColor="#000"
+                                android:id="@+id/necessity"/>
+                        </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

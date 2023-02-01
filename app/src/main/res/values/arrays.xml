@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="necessity">
+        <item>칼로리(kcal)</item>
+        <item>카페인(mg)</item>
+        <item>포화지방(g)</item>
+        <item>나트륨(mg)</item>
+        <item>당류(g)</item>
+        <item>단백질(g)</item>
+    </string-array>
+</resources>

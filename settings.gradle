@@ -1,0 +1,20 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        maven{
+            url "https://jitpack.io"
+        } //그래프, 달력
+        mavenCentral()
+        jcenter() //네비게이션바
+    }
+}
+rootProject.name = "Water"
+include ':app'

@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "464870052253",
+    "firebase_url": "https://water-90897-default-rtdb.firebaseio.com",
+    "project_id": "water-90897",
+    "storage_bucket": "water-90897.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:464870052253:android:2439ce5a714d188bbc9f74",
+        "android_client_info": {
+          "package_name": "com.example.exdb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "464870052253-eep78v7dcfsb28assaj424rfmrhodc31.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnJAFK4xfTrkCfERyyp4HLN5j3NLL4aiE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "464870052253-eep78v7dcfsb28assaj424rfmrhodc31.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:464870052253:android:c49465247c91b160bc9f74",
+        "android_client_info": {
+          "package_name": "com.gmail.water"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "464870052253-eep78v7dcfsb28assaj424rfmrhodc31.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnJAFK4xfTrkCfERyyp4HLN5j3NLL4aiE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "464870052253-eep78v7dcfsb28assaj424rfmrhodc31.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
